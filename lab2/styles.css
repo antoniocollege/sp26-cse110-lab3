@@ -1,0 +1,213 @@
+/* i ran this through beautifier.io which is a program I use for a lot of personal projects
+just makes the formatting look a lot nicer */
+/*I did use AI for color suggestions since everything I came up with was really clashing and ugly*/
+:root {
+    --main-color: #6A0DAD;
+    --accent-color: #00CED1;
+}
+
+body {
+    background-color: var(--main-color, #6A0DAD);
+    color: #F0F8FF;
+    font-family: "Bebas Neue", system-ui;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1,h2 {
+    text-align: center;
+    text-decoration: underline wavy #00FF7F;
+}
+
+#main-title {
+    color: var(--accent-color, #00CED1);
+}
+
+.meeting-container {
+    max-width: 960px;
+    margin: 40px auto;
+    background-color: rgb(25, 25, 45);
+    padding: 40px 30px 35px 30px;
+    border-style: solid;
+    border-color: #4B0082;
+    border-width: 12px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(75, 0, 130, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img[alt*="baja blast"] {
+    border: 6px solid #39FF14;
+    border-radius: 20px;
+    width: 85%;
+    max-width: 620px;
+    min-width: 280px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+p,
+li {
+    margin-bottom: 12px;
+}
+
+h2~p {
+    font-style: italic;
+    color: #E0B0FF;
+}
+
+h2+p {
+    color: #7FFFD4;
+}
+
+ul>li {
+    padding-left: 25px;
+}
+
+.meeting-container p {
+    margin: 18px 0;
+}
+
+p.meeting-note {
+    background-color: hsla(280, 60%, 70%, 0.2);
+}
+
+ul:has(li) {
+    background-color: rgba(147, 112, 219, 0.15);
+    padding: 15px;
+    border-left: 8px solid #00FF7F;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container>div {
+    background-color: color-mix(in srgb, #6A0DAD 60%, #00CED1);
+    padding: 15px;
+    margin: 8px;
+    border-radius: 8px;
+    color: #F0F8FF;
+}
+
+.wide-color {
+    color: lch(65% 120 300);
+    color: #FF00FF;
+}
+
+.special-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-style: dashed;
+    border-color: #39FF14;
+    border-width: 5px;
+}
+
+i {
+    color: #FF69B4;
+}
+
+a:hover {
+    color: #FFFF00;
+    text-decoration: underline;
+}
+
+button:active {
+    transform: scale(0.92);
+}
+
+.block-example {
+    display: block;
+}
+
+.inline-example {
+    display: inline;
+}
+
+.inline-block-example {
+    display: inline-block;
+    width: 180px;
+}
+
+.none-example {
+    display: none;
+}
+
+.relative-box {
+    position: relative;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin: 25px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+img {
+    width: 85%;
+}
+
+.special-box {
+    height: 180px;
+    min-width: 300px;
+    max-width: 900px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .meeting-container {
+        margin: 15px auto;
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1,
+    h2 {
+        font-size: 1.1rem;
+    }
+}
